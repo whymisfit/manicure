@@ -1,38 +1,286 @@
+@import "static/css/fonts.css";
+
+* {
+    box-sizing: border-box;
+
+}
+
+button {
+    outline: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    background-color: #F4F4F4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: "RobotoSlab-Regular", serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    align-self: center;
+
+    max-width: 1285px;
+    width: 100%;
+    padding: 0 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-fluid {
+    display: flex;
+    align-self: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+    display: flex;
+    height: 80px;
+
+    position: fixed;
+    align-self: center;
+
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: "RobotoSlab-Bold", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__menu {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
 }
+
+.menu__item {
+    margin: 0 15px;
+    color: white;
+    border-bottom: 2px solid transparent;
+
+    transition: 0.2s;
+}
+
+.menu__item:hover {
+    border-color: white;
+}
+
+.header__logo {
+    display: flex;
+    font-size: 36px;
+    color: white;
+}
+
+.menu-btn__appointment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid white;
+    border-radius: 24px;
+    background-color: transparent;
+    color: white;
+
+    padding: 10px 15px;
+
+    font-family: "RobotoSlab-Bold", serif;
+    margin-left: 15px;
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.menu-btn__appointment:hover {
+    background-color: white;
+    color: #F97481;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+    background: url("./static/img/hero-bg.png") no-repeat;
+    background-size: cover;
+
+    margin-bottom: 90px;
+}
+
+.hero__title {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+
+}
+
+.hero__title h1 {
+    font-size: 96px;
+    font-family: "RobotoSlab-ExtraLight", serif;
+    line-height: 92px;
+    color: white;
+    margin-bottom: 20px;
+
+    max-width: 954px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 46px;
+    font-family: "RobotoSlab-Bold", serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.title span {
+    display: block;
+    line-height: 0.8;
+    font-size: 24px;
+}
+
+.services {
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.services__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-height: 86px;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+
+    padding: 20px 25px;
+
+    margin-bottom: 15px;
+}
+
+.services__item:last-child {
+    margin: 0;
+}
+
+.item__name {
+    font-size: 36px;
+    font-family: "RobotoSlab-Bold", serif;
+}
+
+.item__desc {
+    color: #878787;
+    font-size: 24px;
+}
+
+.item__cost {
+    font-size: 24px;
+    justify-self: flex-end;
+}
+
+.btn-appointment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 224px;
+    max-height: 60px;
+    width: 100%;
+    height: 100%;
+
+    background-color: #F97481;
+    border-radius: 24px;
+    border: none;
+
+    font-size: 24px;
+
+    padding: 14px 39px;
+    margin: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-appointment:hover {
+    background-color: #f8838f;
+}
+
+.list-specialist {
+    width: 100%;
+}
+
+.specialist {
+    display: flex;
+
+    padding: 26px;
+
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+
+    background-color: white;
+}
+
+.specialist__img {
+    max-width: 386px;
+    width: 100%;
+    max-height: 379px;
+    border-radius: 8px;
+}
+
+.specialist__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-left: 30px;
+}
+
+.specialist__name {
+    font-family: "RobotoSlab-Medium", serif;
+    max-width: 120px;
+}
+
+.specialist__quote {
+    font-family: "RobotoSlab-Light", serif;
+    font-size: 36px;
+}
+
+.specialist__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specialist__footer p {
+    font-family: "RobotoSlab-Medium", serif;
+}
+ .specialist__footer img {
+     width: 40px;
+     height: 40px;
+ }
