@@ -17,6 +17,14 @@ a {
     text-decoration: none;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .App {
     display: flex;
     flex-direction: column;
@@ -54,7 +62,6 @@ body {
     display: flex;
     height: 80px;
 
-    position: fixed;
     align-self: center;
 
     align-items: center;
