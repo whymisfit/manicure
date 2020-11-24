@@ -4,6 +4,7 @@ import ListSpecialist from "./list_specialist/list_specialist";
 import SeregaImg from "../../static/img/spec1.png";
 import AnastasiaImg from "../../static/img/spec2.png";
 import MozerImg from "../../static/img/spec3.png";
+import ContactUs from "./contact_us/contact_us";
 
 const services = [
     {
@@ -68,9 +69,10 @@ class Content extends React.Component {
                 <h3 className="title">Услуги</h3>
                 <ListServices services={_services}/>
 
-
                 <ListSpecialist specialists={_specialists}/>
 
+                <h3 className="title">Есть вопросы?</h3>
+                <ContactUs />
             </div>
         )
     }

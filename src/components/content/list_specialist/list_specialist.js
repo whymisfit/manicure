@@ -1,5 +1,5 @@
 import React from 'react';
-import InstIcon from "../../../static/icons/inst-square.png"
+import InstIcon from "../../../static/icons/png/inst-square.png"
 
 class ListSpecialist extends React.Component {
     render() {
