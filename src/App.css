@@ -44,6 +44,7 @@ body {
 .container-fluid {
     display: flex;
     align-self: center;
+
     max-width: 100%;
     width: 100%;
     padding: 0 15px;
@@ -298,6 +299,7 @@ body {
     border-radius: 8px;
 
     padding: 20px;
+    margin-bottom: 80px;
 }
 
 .contact-us p, label {
@@ -362,3 +364,53 @@ body {
     font-size: 12px;
 }
 
+.footer {
+    background-color: #592C30;
+    height: 226px;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+}
+
+.footer .container {
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__list a {
+    color: white;
+}
+
+.footer__list a:hover {
+    color: #cbcbcb;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__socials a{
+    margin: 0 35px;
+}
+
+.footer__socials a:last-child{
+    margin: 0 0 0 35px;
+}
+
+.footer__socials img {
+
+}
+
+.footer__brand {
+    font-size: 18px;
+    text-align: right;
+}

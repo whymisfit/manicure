@@ -5,6 +5,7 @@ import SeregaImg from "../../static/img/spec1.png";
 import AnastasiaImg from "../../static/img/spec2.png";
 import MozerImg from "../../static/img/spec3.png";
 import ContactUs from "./contact_us/contact_us";
+import Footer from "../footer/footer";
 
 const services = [
     {
