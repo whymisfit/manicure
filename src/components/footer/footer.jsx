@@ -16,9 +16,9 @@ class Footer extends React.Component {
                     </div>
                     <div className="footer__list">
                         <p><b>Дополнительная информация</b></p>
-                        <a href=""><p>Использование cookie</p></a>
-                        <a href=""><p>Юридическая информация</p></a>
-                        <a href=""><p>Согласие на обработку персональных данных</p></a>
+                        <a href="/#"><p>Использование cookie</p></a>
+                        <a href="/#"><p>Юридическая информация</p></a>
+                        <a href="/#"><p>Согласие на обработку персональных данных</p></a>
                     </div>
                     <div className="footer__info">
                         <div className="footer__socials">
