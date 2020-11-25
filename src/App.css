@@ -474,10 +474,11 @@ body {
     border: none;
     font-size: 18px;
     height: 40px;
-    max-width: 125px;
+    max-width: 145px;
     width: 100%;
     align-self: center;
     margin-top: 15px;
+    padding: 0 10px;
     cursor: pointer;
 }
 
