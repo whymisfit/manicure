@@ -80,6 +80,11 @@ body {
     font-size: 24px;
 }
 
+.header__menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
 .menu__item {
     margin: 0 15px;
     color: white;
@@ -141,13 +146,12 @@ body {
     display: flex;
     justify-self: center;
     flex-direction: column;
-
 }
 
 .hero__title h1 {
     font-size: 96px;
     font-family: "RobotoSlab-ExtraLight", serif;
-    line-height: 92px;
+    line-height: 0.9;
     color: white;
     margin-bottom: 20px;
 
@@ -183,8 +187,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    max-height: 86px;
-    height: 100%;
+    height: max-content;
     background-color: white;
     border: 1px solid #EDEDED;
     border-radius: 8px;
@@ -285,6 +288,7 @@ body {
 .specialist__footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .specialist__footer p {
@@ -377,10 +381,11 @@ body {
 
 .footer {
     background-color: #592C30;
-    height: 226px;
+    /*height: 226px;*/
     font-size: 24px;
     color: white;
     width: 100%;
+    padding: 15px 0;
 }
 
 .footer .container {
@@ -396,11 +401,11 @@ body {
 }
 
 .footer__list a {
-    color: white;
+    color: #cbcbcb;
 }
 
 .footer__list a:hover {
-    color: #cbcbcb;
+    color: #9b9b9b;
 }
 
 .footer__info {
@@ -410,11 +415,7 @@ body {
 }
 
 .footer__socials a{
-    margin: 0 35px;
-}
-
-.footer__socials a:last-child{
-    margin: 0 0 0 35px;
+    margin: 0 1vw;
 }
 
 .footer__socials img {
@@ -424,4 +425,107 @@ body {
 .footer__brand {
     font-size: 18px;
     text-align: right;
+}
+
+@media (max-width: 1199px) {
+    .header__menu {
+        display: none;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    .menu__item, .menu-btn__appointment {
+        font-size: 18px;
+        border: none;
+        margin: 0;
+    }
+    .header__menu-btn {
+        display: flex;
+    }
+    .header__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .hero__title h1 {
+        font-size: 10vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 10vw;
+    }
+    .services__item p{
+        font-size: 5vw;
+    }
+
+    .specialist {
+        flex-direction: column;
+    }
+    .specialist__info {
+        margin: 0;
+    }
+    .specialist__name,
+    .specialist__quote{
+        align-self: center;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .specialist__quote {
+        font-size: 7vw;
+    }
+    .specialist__img {
+        align-self: center;
+    }
+    .footer a, p{
+        font-size: 4vw;
+    }
+    .footer .container {
+        flex-direction: column;
+    }
+    .footer__list {
+        margin: 15px 0;
+    }
+    .footer__socials {
+        margin: 15px 0;
+    }
+    .footer__socials img {
+        height: 24px;
+        width: 24px;
+    }
+    .footer__info {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 340px){
+    header .container-fluid {
+        width: 320px;
+    }
+    .App header.container-fluid {
+        width: 320px;
+    }
+    .header {
+        width: 320px;
+    }
+
+    .btn-appointment {
+        width: 100%;
+        max-width: 100%;
+        font-size: 7vw;
+        height: 42px;
+    }
+    .footer a, p {
+        font-size: 4vw;
+    }
 }

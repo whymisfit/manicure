@@ -62,15 +62,13 @@ const specialists = [
 
 class Content extends React.Component {
     render() {
-        const _services = services;
-        const _specialists = specialists;
-
         return (
             <div className="content container" id="content">
-                <h3 className="title">Услуги</h3>
-                <ListServices services={_services}/>
 
-                <ListSpecialist specialists={_specialists}/>
+                <h3 className="title">Услуги</h3>
+                <ListServices services={services}/>
+
+                <ListSpecialist specialists={specialists}/>
 
                 <h3 className="title">Есть вопросы?</h3>
                 <ContactUs />

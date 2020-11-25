@@ -22,7 +22,7 @@ class Specialist extends React.Component {
                     <span>{this.props.specialist.desc}</span>
                 </h3>
                 <div className="specialist">
-                    <img className="specialist__img" src={this.props.specialist.img}/>
+                    <img className="specialist__img" src={this.props.specialist.img} alt=""/>
                     <div className="specialist__info">
                         <p className="specialist__name">
                             {this.props.specialist.name}
